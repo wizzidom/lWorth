@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <title>The WORTH-INVADE GROUP</title>
+<!-- 
+
+Known Template 
+
+https://templatemo.com/tm-516-known
+
+-->
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="bootstrap.min.css">
+     <link rel="stylesheet" href="font-awesome.min.css">
+     <link rel="stylesheet" href="owl.carousel.css">
+     <link rel="stylesheet" href="owl.theme.default.min.css">
+     <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="templatemo-style.css">
+    
+
+</head>
+<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50" style="background-color: black;">
+
+
+
+     <!-- MENU -->
+     <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
+          <div class="container">
+
+               <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                    </button>
+
+                    <!-- lOGO TEXT HERE -->
+                              
+                                <ul class="social-icon">
+                                   <br>
+                                   <li><a href="index.html" style="font-size: 13px; font-weight: bold;">THE WORTH-INVADE GROUP</a></li>     
+                         </ul>
+                              
+               
+
+               </div>
+
+               <!-- MENU LINKS -->
+               <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-nav-first">
+                         <li style="padding-top: 7px;"><a href="index.html"  style=" background-color: rgba(0, 0, 0, 0.3); border-radius: 30px; padding: 10px 30px;">HOME</a></li>
+                         <li><a href="about.html" onclick="window.location.replace('about.html')" >ABOUT US</a></li>
+                         <li><a href="brand.html"  >OUR BRAND</a></li>
+                         <li><a href="sustainability.html " onclick="window.location.replace('sustainability.html')"  >SUSTAINABILITY</a></li>
+                         <li><a href="investors.html" onclick="window.location.replace('investors.html')"  >INVESTORS </a></li>
+                         <li><a href="careers.html" onclick="window.location.replace('careers.html')"  >CAREER</a></li>
+                      
+                         <li><a href="contactus.html" onclick="window.location.replace('contactus.html')" >CONTACT</a></li>
+                     
+                         
+                      
+                    </ul>
+                    
+                    <ul class="nav 1``bar-nav navbar-right">
+                        <li><a href="#" class="fa fa-search"> 
+                          <input type="text" placeholder="search" style="color : black; width: 100px ; font-size: 20px ; border:  transparent; height: 40px; background-color: transparent;"/>
+
+                        <hr>
+                        </a>
+                        
+                        </li>
+                       
+                    </ul>
+                   
+                
+                    
+                    </ul>
+               </div>
+
+          </div>
+     </section>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+<!--      
+     <div id="about">
+        <div style="border: solid black" >
+             <div class='child'>
+               <div class="aboutus">
+   
+                 <p>
+                   <h2>Contact Us</h2>
+                 <h3>Address:</h3>
+                 <b><h4>Headquarters</h4></b>
+                 <h5>Thabo Mbeki Street, Pietersburg, Polokwane,0700 South Africa</h5>
+                <b> <h4>Customer Care Line</h4></b> 
+                 <h5>066587</h5>
+                <h4>Reception</h4></b> 
+                 <h5>0145878701</h5>
+                <b> <h4>Complains</h4></b>
+                 <h5>complains@worthinvade.com</h5>
+                  
+                 </p>
+                 <button style="font-size: 25px; color :white; background-color: black;"><a href = "about.html" >Learn More</a></button>
+               </div>
+             </div>
+     </div> -->
+     <style>
+          body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  padding-bottom: 100px;
+}
+
+#contact {
+  width: 100%;
+  height: 100%;
+}
+
+.section-header {
+  text-align: center;
+  margin: 0 auto;
+  padding: 40px 0;
+  font: 300 60px 'Oswald', sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  max-width: 1000px;
+}
+
+/* Left contact page */
+.form-horizontal {
+  /*float: left;*/
+  max-width: 1000px;
+  font-family: 'Lato';
+  font-weight: 400;
+}
+
+.form-control, 
+textarea {
+  border: 2px solid blue;
+  max-width: 400px;
+  background-color: transparent;
+  color: white;
+  letter-spacing: 1px;
+  border-bottom: 1px so;
+}
+
+.send-button {
+  margin-top: 15px;
+  height: 34px;
+  width: 400px;
+  overflow: hidden;
+  transition: all .2s ease-in-out;
+}
+
+.alt-send-button {
+  width: 400px;
+  height: 34px;
+  transition: all .2s ease-in-out;
+}
+
+.send-text {
+  display: block;
+  margin-top: 10px;
+  font: 700 12px 'Lato', sans-serif;
+  letter-spacing: 2px;
+}
+
+.alt-send-button:hover {
+  transform: translate3d(0px, -29px, 0px);
+}
+
+/* Begin Right Contact Page */
+.direct-contact-container {
+  max-width: 1000px;
+}
+
+/* Location, Phone, Email Section */
+.contact-list {
+  list-style-type: none;
+  margin-left: 20px;
+  padding-right: 0px;
+}
+
+.list-item {
+  line-height: 4;
+  color: #aaa;
+}
+
+.contact-text {
+  font: 300 18px 'Lato', sans-serif;
+  letter-spacing: 1.9px;
+  color: #bbb;
+}
+
+.place {
+  margin-left: 62px;
+}
+
+.phone {
+  margin-left: 56px;
+}
+
+.gmail {
+  margin-left: 53px;
+}
+
+.contact-text a {
+  color: #bbb;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+
+.contact-text a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/* Social Media Icons */
+.social-media-list {
+  position: relative;
+  font-size: 22px;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.social-media-list li a {
+  color: #fff;
+}
+
+.social-media-list li {
+  position: relative; 
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  margin: 10px 3px;
+  line-height: 60px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: rgb(27,27,27);
+  cursor: pointer; 
+  transition: all .2s ease-in-out;
+}
+
+.social-media-list li:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0 0 0 1px #fff;
+  transition: all .2s ease-in-out;
+}
+
+.social-media-list li:hover {
+  background-color: #fff; 
+}
+
+.social-media-list li:hover:after {
+  opacity: 1;  
+  transform: scale(1.12);
+  transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+}
+
+.social-media-list li:hover a {
+  color: #000;
+}
+
+.copyright {
+  font: 200 14px 'Oswald', sans-serif;
+  color: #555;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+hr {
+  border-color: rgba(255,255,255,.6);
+}
+
+/* Begin Media Queries*/
+@media screen and (max-width: 850px) {
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .direct-contact-container, .form-horizontal {
+    margin: 0 auto;
+  }  
+  
+  .direct-contact-container {
+    margin-top: 60px;
+    max-width: 3000px;
+  }    
+  .social-media-list li {
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+  }
+  .social-media-list li:after {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+  }
+}
+
+@media screen and (max-width: 569px) {
+
+  .direct-contact-container, .form-wrapper {
+    float: none;
+    margin: 0 auto;
+  }  
+  .form-control, textarea {
+    
+    margin: 0 auto;
+  }
+ 
+  
+  .name, .email, textarea {
+    width: 280px;
+  } 
+  
+  .direct-contact-container {
+    margin-top: 60px;
+    max-width: 280px;
+  }  
+  .social-media-list {
+    left: 0;
+  }
+  .social-media-list li {
+    height: 55px;
+    width: 55px;
+    line-height: 55px;
+    font-size: 2rem;
+  }
+  .social-media-list li:after {
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+  }
+  
+}
+
+@media screen and (max-width: 410px) {
+  .send-button {
+    width: 99%;
+  }
+}
+          </style>
+
+
+    <section id="">
+  
+     <h1 class="section-header"></h1>
+     
+     <div class="contact-wrapper">
+     
+     <!-- Left contact page --> 
+       
+       <form id="contact-form" class="form-horizontal" role="form">
+          
+         <div class="form-group">
+           <div class="col-sm-12">
+             <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+             <hr>   
+           </div>
+         </div>
+   
+         <div class="form-group">
+          <div class="col-sm-12">
+            <input type="text" class="form-control" id="name" placeholder="SURNAME" name="name" value="" required>
+            <hr>   
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-12">
+            <input type="text" class="form-control" id="name" placeholder="ID" name="name" value="" required>
+            <hr>   
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-12">
+            <input type="text" class="form-control" id="name" placeholder="CONTACT" name="name" value="" required>
+            <hr>
+          </div>
+        </div>
+         <div class="form-group">
+           <div class="col-sm-12">
+             <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+             <hr> 
+           </div>
+         </div>
+         <div class="form-group">
+          <div class="col-sm-12">
+            <input type="text" class="form-control" id="name" placeholder="LOCATION" name="name" value="" required>
+            <hr>   
+          </div>
+        </div>
+   
+         <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+         <hr>
+         
+         <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+           <div class="alt-send-button">
+             <i class="fa fa-paper-plane"></i><span class="send-text">SUBMIT</span>
+           </div>
+         
+         </button>
+         
+       </form>
+       
+     <!-- Left contact page --> 
+       
+         <div class="direct-contact-container">
+   
+           <ul class="contact-list">
+             <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">
+             <U> HEADQUATERS </U>
+              <br> 
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Polokwane, Pietersburg,Thabo Mbeki Street, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; South Africa</span></i></li>
+
+
+             <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone">
+              
+              <a href="tel:1-212-555-5555" title="Give me a call">
+                <U> Landline Number </U>
+                <br> 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                015 587 8701</a></span></i></li>
+             
+             <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">enquire@worthinvade.com</a></span></i></li>
+             
+           </ul>
+           
+             <li class="list-item"><i class="fa fa-paper-plane fa-2x"><span class="contact-text gmail"><a href="#">
+              <U> Business Hours </U>
+              <br> 
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Monday to Friday <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 08h00 to 16h00 <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Saturday & Sunday (Closed) <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Public Holiday (Closed)
+             </a></span></i></li>
+             
+          
+            
+           
+           <!-- <ul class="social-media-list">
+             <li><a href="#" target="_blank" class="contact-icon">
+               <i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+             </li>
+        
+             <li><a href="#" target="_blank" class="contact-icon">
+               <i class="fa fa-twitter" aria-hidden="true"></i></a>
+             </li>
+             <li><a href="#" target="_blank" class="contact-icon">
+               <i class="fa fa-instagram" aria-hidden="true"></i></a>
+             </li>       
+             <li><a href="#" target="_blank" class="contact-icon">
+              <i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+            </li> 
+           </ul> -->
+           <!-- <hr> -->
+   
+           <!-- <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div> -->
+   
+         </div>
+       
+     </div>
+     
+   </section>  
+     
+     
+
+     <footer id="footer">
+        <div class="container">
+             <div class="row">
+
+                  <div class="col-md-4 col-sm-6">
+                       <div class="footer-info">
+                            <div class="section-title">
+                                 <h2>Headquarter</h2>
+                            </div>
+                            <address>
+                                 <p>Thabo Mbeki Street, Pietersburg<br> Polokwane, 0700 South Africa</p>
+                            </address>
+
+
+                            <div class="copyright-text"> 
+                                 <p>Copyright &copy; 2022 WORTH-INVADE GROUP</p>
+                                 <br><br>
+                                 <a href="#" title="Image from freepnglogos.com"><img src="https://www.freepnglogos.com/uploads/visa-card-and-mastercard-logo-png-28.png" width="200" alt="visa card and mastercard logo png" /></a>
+                                 
+                            </div>
+                       </div>
+                  </div>
+
+                  <div class="col-md-4 col-sm-6">
+                       <div class="footer-info">
+                            <div class="section-title">
+                                 <h2>Contact Info</h2>
+                            </div>
+                            <address>
+                                 <p>+27123456678</p>
+                                 <p><a href="mailto:youremail.co">help@worth-invade.co.za</a></p>
+                            </address>
+
+                            <div class="footer_menu">
+                                 <h2>Socials</h2>
+                                 <ul>
+                                      <ul class="social-icon">
+                                           <li><a href="twitter.com/twi_group" class="fa fa-twitter"></a></li>
+                                           <li><a href="instagram.com/twi_group_sa" class="fa fa-instagram"></a></li>
+                                           <li><a href="#" class="fa fa-facebook-square"></a></li>
+                                     
+                                 </ul>
+                            </div>
+                       </div>
+                  </div>
+
+                  <div class="col-md-4 col-sm-12">
+                       <div class="footer-info newsletter-form">
+                            <div class="section-title">
+                                 <h2>Map</h2>
+                                 <div class="mapouter"><div class="gmap_canvas"><iframe width="374" height="315" id="gmap_canvas" src="https://maps.google.com/maps?q=Thabo%20Mbeki%20Street,%20Pietersburg%20Polokwane,%200700%20South%20Africa&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies-online.net"></a><br><style>.mapouter{position:relative;text-align:right;height:315px;width:374px;}</style><a href="https://www.embedgooglemap.net">custom google maps embed</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:315px;width:374px;}</style></div></div>     
+                            </div>
+                       </div>
+                       
+                  
+                  </div>
+                  
+                  <p>.
+                       <hr style="height:2px;border-width:0;color:white;background-color:white">
+                       <p style="text-align: center;">COPYRIGHT &copy; 2022 THE WORTH-INVADE GROUP PTY LIMITED IS A REGISTERED CREDIT PROVIDER(NCRCP NO 22222)</p>
+                                 <br><br>
+                  </p>
+             </div>
+        </div>
+   </footer> 
+  

@@ -1,0 +1,622 @@
+<head>
+    <meta chatset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+  <style>
+  
+  * {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    outline: 0;
+  }
+  body, html {
+    width: 100%;
+    height: 100%;
+  }
+  body {
+   background: none;
+  }
+  .clearfix {
+    content:"";
+    display: table;
+  }
+  .shop-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    opacity: .8;
+  }
+  .pop-up {
+    width: 900px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    position: relative;
+    background: #fff;
+    padding: 30px;
+    border-radius: 2px;
+  }
+  /*GALLERY*/
+  .pics {
+    float: left;
+    width: 460px;
+    margin-right: 0px;
+  }
+  .pics span {
+    display: block;
+  }
+  .main-img img{
+    display: block;
+  
+    border-radius: 2px;
+    padding-left: 150px;
+    width: 150px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  .additional-img img {
+    float: left; /*display: inline-block has  automatic margin right and bottom :( */
+    width: 88px;
+    height: 90px;
+    padding: 10px 5px;
+    border: .5px solid #ddd;
+    border-radius: 2px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  .additional-img img:nth-child(4) {
+    margin-right: 0;
+  }
+  .main-img img:hover,
+  .additional-img img:hover {
+    box-shadow: 0 0 6px #ddd;
+  }
+  /*PRODUCT INFORMATION*/
+  .product {
+    float: right;
+    width: 430px;
+  }
+  span.category {
+    display: block;
+    font-weight: 700;
+    color: #888;
+    font-size: 12px;
+    line-height: 14px;
+    font-style: italic;
+  }
+  .product .category:hover {
+    color: #999;
+    cursor: pointer;
+  }
+  .product h1 {
+    width: 300px;
+    font-size: 21px;
+    line-height: 24px;
+    margin-top: 5px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: .3px;
+  }
+  /*STOCK LABEL*/
+  span.stock {
+    display: block;
+    float: right;
+    position: relative;
+    top: 4px;
+    line-height: 11px;
+    padding: 6px 12px 5px 12px;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background: black;
+    border-radius: 14px;
+    letter-spacing: .3px;
+  }
+  span.stocks {
+    display: block;
+    float: right;
+    left: -80px;
+    position: relative;
+    top: 150px;
+    line-height: 11px;
+    padding: 6px 12px 5px 12px;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background: black;
+    border-radius: 14px;
+    letter-spacing: .3px;
+  }
+  
+  /*PRICE & RATING*/
+  .block-price-rating {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .block-price {
+    float: left;
+    width: auto;
+    margin-right: 20px;
+  }
+  .price-new {
+    float: left;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  .price-new-dollar {
+    float: left;
+    display: block;
+    font-size: 24px;
+    margin-right: 5px;
+    color: #333;
+  }
+  .price-new-cent {
+    font-size: 14px;
+  }
+  .price-old {
+    text-decoration: line-through;
+    color: #444;
+    font-size: 14px;
+    position: relative;
+    top: 6px;
+  }
+  /*rating*/
+  .block-rating {
+    float: right;
+    position: relative;
+    top: 2px;
+  }
+  span.rating img {
+    display: block;
+    float: left;
+    width: 110px;
+    margin-left: 10px;
+  }
+  span.rating img:hover {
+    cursor: pointer;
+  }
+  /*review*/
+  span.review {
+    display: block;
+    float: left;
+    position: relative;
+    top: 6px;
+    font-weight: 700;
+    color: #888;
+    font-size: 12px;
+    font-style: italic;
+  }
+  span.review:hover {
+    color: #999;
+    cursor: pointer;
+  }
+  /*PRODUCT DESCRIPTION*/
+  .descr { 
+    font-size: 14px;
+    line-height: 18px;
+    color: #444;
+    letter-spacing: .3px;
+    margin-top: 10px;
+    width: 430px;
+    height: 71px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: no-wrap;
+  }
+  /*SELECT BLOCK*/
+  .block-select {
+    margin-top: 15px;
+  }
+  .select-color,
+  .select-size {
+    float: left;
+    font-size: 14px;
+    font-weight: 700;
+    color: #888;
+  }
+  .select-color span,
+  .select-size span {
+    display: block;
+    margin-bottom: 5px;
+  }
+  select.color {
+    width: 320px;
+    margin-right: 10px;
+  }
+  select.size {
+    width: 100px;
+  }
+  select.color, select.size {
+    padding: 8px 10px;
+    border: .5px solid #ddd;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    opacity: .7;
+    letter-spacing: .3px;
+  }
+  /*BUTTON*/
+  .btn {
+    margin: 10px auto;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: .3px;
+    text-transform: uppercase;
+    padding: 15px 0;
+    width: 100%;
+    border-radius: 2px;
+    cursor: pointer;
+    background: black;
+  }
+  .btn:hover {
+    background: black;
+  }
+  /*LINKS*/
+  .block-footer {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .block-links {
+    float: left;
+    cursor: pointer;
+  }
+  .block-links img {
+    width: 20px;
+    opacity: .3;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+  .block-links span {
+    font-size: 11px;
+    color: #888;
+    font-weight: 700;
+    letter-spacing: .3px;
+    text-transform: uppercase;
+    font-style: italic;
+  }
+  .block-links span:hover {
+    color: #999;
+  }
+  .wishlist {
+    margin-top: 5px;
+  }
+  /*SOCIAL*/
+  .social {
+    float: right;
+    position: relative;
+    top: 5px;
+  }
+  .social img {
+    width: 36px;
+    opacity: .3;
+    cursor: pointer;
+    margin-right: 3px;
+    display: inline;
+  }
+  .social img:nth-child(4) {
+    margin-right: 0;
+  }
+  .social img:hover {
+    opacity: .2;
+
+
+  }
+  select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+  padding: 20px;
+}
+option{
+ 
+}
+  
+  </style>
+  </head>
+  <div class="content">
+    <div class=""></div>
+    <div class="pop-up clearfix">
+      <!--GALLERY-->
+      <div class="pics">
+        <!-- <span class="main-img"><img src="front.jpeg"></span> -->
+        <div class="additional-img">
+          <img src="sidde.jpeg">
+          <img src="side.jpeg">
+          <img src="back.jpeg">
+          <img src="another.jpeg">
+        </div>
+        <form >
+         
+          <select name="cars" id="cars" style="border-radius: 30px; font-size: 20px;  background-color: black; color: white;">
+            <option value="">PRODUCT INFORMATION</option>
+            <option value="">SKU NO:</option>
+            <option value="">FIT: SLIM</option>
+            <option value="">FABRICS:</option>
+            <option value="">WASH CARE:</option>
+          </select>
+          <br> <br> 
+          <select name="cars" id="cars" style="border-radius: 30px; font-size: 20px;  background-color: black; color: white;">
+            <option value="volvo">DELIVERY INFORMATION</option>
+          
+          </select>
+          <br>  <br> 
+          <select name="cars" id="cars" style="border-radius: 30px; font-size: 20px;  background-color: black; color: white;">
+            <option value="volvo">EXCHANGE INFORMATION</option>
+          
+          </select>
+          <br>  <br> 
+          <select name="cars" id="cars" style="border-radius: 30px; font-size: 20px;  background-color: black; color: white;">
+            <option value="volvo">IN-STORE COLLECTION </option>
+          
+          </select>
+          <br>  <br> 
+          <select name="cars" id="cars" style="border-radius: 30px; font-size: 20px;  background-color: black; color: white;">
+            <option value="volvo">RETURN INFORMATION </option>
+          
+          </select>
+          <br>  <br> 
+          <select name="cars" id="cars" style="border-radius: 30px; font-size: 20px;  background-color: black; color: white;">
+            <option value="volvo">REFUND INFORMATION</option>
+          
+          </select>
+        </form>
+      </div>
+      
+      <!-- PRODUCT INFORMATION -->
+      <div class="product">
+        <!--category-breadcrumb-->
+        <!-- <span class="category">Jeans</span> -->
+        <!--stock-label-->
+        <!-- <span class="stocks">
+          <p>QUANTITY</p>
+          <button onclick="myFunctions()" style="font-size: 20px;">-</button>
+          <input type="number" value="1"  id="myNumber" style="border: 1px solid black; width : 35px">
+          
+          
+          <button onclick="myFunction()"  style="font-size: 20px;">+</button>
+          
+          <script>
+          function myFunction() {
+            document.getElementById("myNumber").stepUp();
+          }
+          function myFunctions() {
+            document.getElementById("myNumber").stepDown();
+          }
+          </script>
+        </span> -->
+        <span class="stock">In Stock</span>
+        <h1>Shoes</h1>
+        <!--PRICE-RATING-REVIEW-->
+        <div class="block-price-rating clearfix">
+          <!--price-->
+          <div class="block-price clearfix">
+            <div class="price-new clearfix">
+              <span class="price-new-dollar">R1499</span>
+              <!-- <span class="price-new-cent">99</span> 
+              <span>(including vat)</span>  -->
+            </div>
+            <!-- <div class="price-old clearfix">
+              <span class="price-old-dollar">$599</span>
+              <span class="price-old-cent">&#8228;90</span>
+            </div>  
+          </div> -->
+          <!--rating-->
+         
+        </div>
+        <!-- rating <ul class="rating">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul> -->
+        <!--PRODUCT DESCRIPTION-->
+        <div class="descr">
+    
+            <p>
+
+            </p>
+      
+        </div> 
+        <!--SELECT BLOCK-->
+       <div class="block-select clearfix">
+        <form>
+          <!-- <div class="select-color">
+            <span>Select Color</span>
+            <select class="color">
+              <option>Cognac</option>
+              <option>Black</option>
+            </select>
+          </div> -->
+
+          <style>
+
+.size-picker {
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-flex-flow:column;
+      -ms-flex-flow:column;
+          flex-flow:column;
+}
+
+
+
+
+.selection {
+  background:#fff;
+}
+
+.range-picker {
+  font-size: 16px;
+  font-size:1rem;
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+  margin-top:5px;
+  -webkit-box-align:center;
+  -webkit-align-items:center;
+      -ms-flex-align:center;
+          align-items:center;
+  line-height:.9em;
+  border-radius : 10px;
+}
+.range-picker div {
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+  border-radius : 10px;
+  border-right:1px solid #bbb;
+  border-top:1px solid #bbb;
+  border-bottom:1px solid #bbb;
+  -webkit-box-align:center;
+  -webkit-align-items:center;
+      -ms-flex-align:center;
+          align-items:center;
+  color:#bbb;
+  width:30px;
+  box-sizing:border-box;
+  cursor:pointer;
+  -webkit-box-pack:center;
+  -webkit-justify-content:center;
+      -ms-flex-pack:center;
+          justify-content:center;
+  height:30px;
+  -webkit-transition:background .5s ease;
+          transition:background .5s ease;
+  border-radius : 10px;
+}
+.highlight-window.mobile {
+  display:none;
+  border-radius : 10px;
+}
+.range-picker .active:hover {
+  background:#fff;
+  border-radius : 10px;
+}
+.range-picker .active {
+  -webkit-transform:scale(1.2);
+      -ms-transform:scale(1.2);
+          transform:scale(1.2);
+  background:#fff;
+  margin-right:3px;
+  margin-left:2px;
+  color:#333;
+  border:1px solid #666;
+  z-index:1;
+  border-radius : 10px;
+}
+.check {
+  position:absolute;
+  right:0px;
+  left:0px;
+  margin-left:auto;
+  margin-right:auto;
+  background:transparent;
+  border-radius : 10px;
+  width:0px;
+  bottom:-3px;
+  border-left:10px solid transparent;
+  border-bottom:10px solid #ccc;
+  border-right:10px solid transparent;
+  height:0px;
+}
+.range-picker div:hover {
+  background:#eee;
+  -webkit-transition:background .2s;
+          transition:background .2s;
+  border-radius : 10px;
+}
+.range-picker div:first-child {
+  border-left:1px solid #bbb;
+  border-radius : 10px;
+}
+.range-picker div.active:first-child {
+  border-left:1px solid #333;
+  border-radius : 10px;
+}
+        
+          </style>
+
+<div class='size-picker'>
+  QUANTITY:
+<div class='range-picker' id='range-picker'>
+<div>1</div><div>2</div><div class='active' >3</div><div>4</div> <div>5</div>
+</div>
+<br><br>
+         
+          
+              <div class='size-picker'>
+               SELECT COLORS:
+         <div class='range-picker' id='range-picker'>
+            <div style="background-color: blue;"></div><div style="background-color: grey;"></div><div class='active' style="background-color: black;"></div>
+         </div>
+         <br> <br> <br>
+          <div class="select-size">
+        
+        <div class='size-picker'>
+          SELECT SIZE <br> <br> 
+     <div class='range-picker' id='range-picker'>
+       <div>2.5</div><div>3.5</div><div>4.5</div><div class='active'>5.5</div><div>6.5</div><div>7.5</div> <div>8.5</div><div>9.5</div>
+     </div>
+     <br> <br>
+  
+          </div> 
+          <!--BUTTON-->
+          <button class="btn"><img src="">Proceed To Checkout</button>
+         </form> 
+        </div>
+        <!--LINKS-->
+       <!-- <div class="block-footer clearfix">
+        <div class="block-links">
+         <div class="send">
+           <img src="http://www.free-icons-download.net/images/share-icon-20724.png">
+           <span>Send to a friend</span>
+          </div>
+          <div class="wishlist">
+            <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/23243-200.png">
+            <span>Save for later</span>
+          </div>
+        </div> -->
+        <!--SOCIAL-->
+        <!-- <div class="social">
+            <a href="#"><img src="http://www.iconsdb.com/icons/download/black/facebook-7-256.gif"></a>
+            <a href="#"><img src="http://www.iconsdb.com/icons/download/black/twitter-4-512.gif"></a>
+            <a href="#"><img src="http://www.iconsdb.com/icons/download/black/google-plus-4-512.jpg"></a>
+            <a href="#"><img src="http://www.nataliemorgan.co.nz/images/Pinterest.png"></a>
+        </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+
+    document.getElementById('range-picker').addEventListener('click', function(e) {
+      var sizeList = document.getElementById('range-picker').children;
+      for (var i = 0; i <= sizeList.length - 1; i++) {
+        console.log(sizeList[i].classList);
+        if (sizeList[i].classList.contains('active')) {
+          sizeList[i].classList.remove('active');
+        }
+      }
+      e.target.classList.add('active');
+    })
+    
+    
+    
+              </script>

@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <title>The WORTH-INVADE GROUP</title>
+<!-- 
+
+Known Template 
+
+https://templatemo.com/tm-516-known
+
+-->
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="bootstrap.min.css">
+     <link rel="stylesheet" href="font-awesome.min.css">
+     <link rel="stylesheet" href="owl.carousel.css">
+     <link rel="stylesheet" href="owl.theme.default.min.css">
+     <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+     <style>
+          * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri;
+  direction: ltr;
+}
+
+body {
+  background-color: #ffffff;
+  color: white;
+}
+
+header {
+  background-color: var(--theme);
+  padding: 20px;
+}
+
+header h1 {
+  font-size: large;
+  color: #ffffff;
+}
+
+:root {
+  --theme: black;
+}
+
+@media (min-width: 768px) {
+  .image-slider-container {
+    width: 80%;
+    margin: 20px auto;
+  }
+}
+
+.image-slider-container .image-slider-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 15px;
+}
+
+.image-slider-container .image-slider-heading h2 {
+  font-size: 17px;
+  color: #c7c7c7;
+}
+
+.image-slider-container .image-slider-heading .swiper-pagination {
+  position: relative;
+  width: auto;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.image-slider-container .image-slider-heading .swiper-pagination .swiper-pagination-bullet {
+  background-color: #e4e4e4;
+  opacity: 100%;
+  width: 15px;
+  height: 10px;
+  border-radius: 100px;
+  transition: 0.5s;
+  margin: 0px 3px;
+}
+
+.image-slider-container .image-slider-heading .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--theme);
+  width: 30px;
+}
+
+.image-slider-container .swiper {
+  position: relative;
+}
+
+.image-slider-container .swiper .swiper-slide {
+  width: 170px; 
+ 
+}
+
+.image-slider-container .swiper .swiper-slide .slide-con {
+  overflow: hidden;
+  height: 220px;
+  margin: 0px 0px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.image-slider-container .swiper .swiper-slide .slide-con .slide-details {
+  padding: 10px;
+ overflow :hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  display: none;
+}
+
+.image-slider-container .swiper .swiper-slide .slide-con .slide-details .movie-info {
+  text-align: left;
+}
+
+.image-slider-container .swiper .swiper-slide .slide-con .slide-details .movie-info h2 {
+  font-size: 15px;
+  padding: 5px 0px 5px 0px;
+}
+
+.image-slider-container .swiper .swiper-slide .slide-con .slide-details .movie-info span {
+  font-size: 13px;
+  margin-right: 0px;
+  color: #727272;
+}
+
+.image-slider-container .swiper .swiper-slide .slide-con .slide-details .movie-btns {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.image-slider-container .swiper .swiper-slide .slide-con .slide-details .movie-btns a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 5px;
+  font-size: 13px;
+  margin: 0px 3px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: white;
+}
+
+.image-slider-container .swiper .swiper-slide .slide-con .slide-details .movie-btns a svg {
+  font-size: 15px;
+}
+
+.image-slider-container .swiper .swiper-slide .slide-con .slide-details .movie-btns a:hover {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.image-slider-container .swiper .swiper-slide .slide-con .slide-details .movie-btns .imdb-rate {
+  width: 100%;
+  font-size: 10px;
+  color: #ecc900;
+}
+
+.image-slider-container .swiper .swiper-slide .slide-con .slide-details .movie-btns .imdb-rate:hover {
+  background-color: #ecc900;
+  color: black;
+  border: 0;
+}
+
+.image-slider-container .swiper .swiper-slide .slide-con .slide-details .movie-btns .like:hover {
+  color: white;
+  background-color: #ff2a00;
+  border: 0;
+}
+
+.image-slider-container .swiper .swiper-slide .slide-con .slide-details .movie-btns .show-movie:hover {
+  color: white;
+  background-color: #2a4aff;
+  border: 0;
+}
+
+.image-slider-container .swiper .swiper-slide .slide-con:hover .slide-details {
+  display: flex;
+}
+
+.image-slider-container .swiper .swiper-slide .slide-con:hover div.movie-info {
+  animation: 30s 1 m;
+}
+
+@keyframes m {
+  from {
+    transform: translateY(-85px);
+  }
+  1% {
+    transform: translateY(60px);
+  }
+  1.5% {
+    transform: translateY(0px);
+  }
+  2% {
+    transform: translateY(20px);
+  }
+  2.5% {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+.image-slider-container .swiper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.6);
+}
+
+     </style>
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="templatemo-style.css">
+     <style>
+      * {box-sizing: border-box}
+      body {font-family: Verdana, sans-serif; margin:0}
+      .mySlides {display: none}
+      img {vertical-align: middle;}
+      
+      /* Slideshow container */
+      .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+      }
+      
+      /* Next & previous buttons */
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+      
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+      }
+      
+      /* Caption text */
+      .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+      
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+      
+      /* The dots/bullets/indicators */
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      
+      .active, .dot:hover {
+        background-color: #717171;
+      }
+      
+      /* Fading animation */
+      .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+      
+      @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }
+      
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 300px) {
+        .prev, .next,.text {font-size: 11px}
+      }
+      </style>
+      
+
+ <script>
+          setInterval(function(){ 
+
+if(i == 0) {
+  images[i].style.display = 'block';
+} else if(i == images.length ) {
+  images[i - 1].style.display = 'none';
+  images[0].style.display = 'block';
+  i = 0;
+} else {
+  images[i - 1].style.display = 'none';
+  images[i].style.display = 'block';
+}
+
+i++;
+
+}, 2000);
+     </script>
+</head>
+<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+
+
+
+     <!-- MENU -->
+     <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
+          <div class="container">
+
+               <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                    </button>
+
+                    <!-- lOGO TEXT HERE -->
+                              
+                                <ul class="social-icon">
+                                   <br>
+                                   <li><a href="index.html" style="font-size: 13px; font-weight: bold;">THE WORTH-INVADE GROUP</a></li>     
+                         </ul>
+                              
+               
+
+               </div>
+
+               <!-- MENU LINKS -->
+               <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-nav-first">
+                         <li style="padding-top: 7px;"><a href="index.html"  style=" background-color: rgba(0, 0, 0, 0.3); border-radius: 30px; padding: 10px 30px;">HOME</a></li>
+                         <li><a href="about.html" onclick="window.location.replace('about.html')" >ABOUT US</a></li>
+                         <li><a href="brand.html"  >OUR BRAND</a></li>
+                         <li><a href="sustainability.html " onclick="window.location.replace('sustainability.html')"  >SUSTAINABILITY</a></li>
+                         <li><a href="investors.html" onclick="window.location.replace('investors.html')"  >INVESTORS </a></li>
+                         <li><a href="careers.html" onclick="window.location.replace('careers.html')"  >CAREER</a></li>
+                      
+                         <li><a href="contactus.html" onclick="window.location.replace('contactus.html')" >CONTACT</a></li>
+                     
+                         
+                      
+                    </ul>
+                    
+                    <ul class="nav navbar-nav navbar-right">
+                         <li><a href="#" class="fa fa-search"> 
+                              <input type="text" placeholder="search" style="color : black; width: 100px ; font-size: 20px ; border:  transparent; height: 40px; background-color: transparent;"/>
+    
+                            <hr>
+                            </a>
+                            
+                            </li>
+                    </ul>
+                   
+                
+                    
+                    </ul>
+               </div>
+
+          </div>
+     </section>
+     
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+ 
+
+     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+   <style>
+    .sqw{
+      color:black;
+          font-size: 100px;
+          font-weight: 500;
+        
+          position: absolute;
+          top: 20%;
+          left: 35%;
+          -webkit-text-stroke: 8px white;
+    }
+   </style>
+  
+
+<div style="background-image: url(mark.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; height: 40vh;">
+  <br><br>
+  <h1 class="sqw">CAREERS</h1>
+</div>
+ 
+    <div style="color: black;">
+     
+     <br>
+      At, the Elginist group, we create a lot of opportunities in media, fashion, medical, Science, teaching, leadership, Finance, and Manufacturing for graduates and non-graduates. We provide training and sent those who want to go to school to study all careers we mentioned. To apply email your documents to this: <a href="#" style="color: purple;">student@elginistgroup.com</a>  please read our requirements before sending any documents or apply and upload your documents. <br> <br>
+
+      For non-graduates: Please email your documents to this email <a href="#" style="color: purple;">student@elginistgroup.com</a>  and the elginist group will apply to university on your behalf and also give you a bursary for the qualification.
+                    
+    </div>
+
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+
+<!--    
+     <section class="image-slider-container">
+         <div class="image-slider-heading">
+          
+             <div class="swiper-pagination"></div>
+         </div>
+         <div class="swiper">
+             <div class="swiper-wrapper">
+                 <div class="swiper-slide">
+                     <div class="slide-con">
+                         <img src="https://images.saymedia-content.com/.image/t_share/MTg3OTY1NTY5MzY0OTI4Mjk4/best-adventure-movies-2000s.jpg"
+                             alt="">
+                         <div class="slide-details">
+                             <div class="movie-info">
+                                 <h2 class="movie-name" title="" style="color: red;">
+                                  MEDIA <br>
+                                  • Filmmakers <br>
+                                  • Photographers <br>
+                                  • Marketing & Advertises <br>  
+                                  • Social Media Managers <br>
+                                  • Cinematograph <br>
+                                  • Drama <br>
+                                  • Broadcasting
+                                 </h2>
+                                 <span class="movie-full-time" title="">
+                                     2h 24m
+                                 </span>
+                                 <span class="movie-views" title="">
+                                     
+                                 </span>
+                             </div>
+                             <div class="movie-btns">
+                                 <a href="#" class="imdb-rate" title="">
+ 
+                                     IMDB 8/10
+ 
+                                 </a>
+                                 <a href="#" class="like" title="">
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                         preserveAspectRatio="xMidYMid meet" viewBox="0 0 36 36">
+                                         <path fill="currentColor"
+                                             d="M33 7.64c-1.34-2.75-5.2-5-9.69-3.69A9.87 9.87 0 0 0 18 7.72a9.87 9.87 0 0 0-5.31-3.77C8.19 2.66 4.34 4.89 3 7.64c-1.88 3.85-1.1 8.18 2.32 12.87C8 24.18 11.83 27.9 17.39 32.22a1 1 0 0 0 1.23 0c5.55-4.31 9.39-8 12.07-11.71c3.41-4.69 4.19-9.02 2.31-12.87Z"
+                                             class="clr-i-solid clr-i-solid-path-1" />
+                                         <path fill="none" d="M0 0h36v36H0z" />
+                                     </svg>
+                                 </a>
+                                 <a href="#" class="show-movie" title="">
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                         preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256">
+                                         <path fill="currentColor"
+                                             d="M240 128a16.1 16.1 0 0 1-7.7 13.7l-144 87.9a15.5 15.5 0 0 1-16.1.3A15.8 15.8 0 0 1 64 216V40a15.8 15.8 0 0 1 8.2-13.9a15.5 15.5 0 0 1 16.1.3l144 87.9A16.1 16.1 0 0 1 240 128Z" />
+                                     </svg>
+                                 </a>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="swiper-slide">
+                     <div class="slide-con"><img
+                             src="https://www.cineglobe.de/wp-content/uploads/2022/07/1844268.jpg-r_1920_1080-f_jpg-q_x-xxyxx.jpg"
+                             alt="">
+                             <div class="slide-details">
+                                 <div class="movie-info">
+                                     <h2 class="movie-name" title="" style="color: red;">
+                                      MEDICAL <br>
+                                      • Physician/Surgeon <br>
+                                      • Nurse Practitioner <br>
+                                      • social media <br>
+                                      • Cinematography
+                                  
+                                     </h2>
+                                     <span class="movie-full-time" title="">
+                                         2h 24m
+                                     </span>
+                                     <span class="movie-views" title="">
+                                         
+                                     </span>
+                                 </div>
+                                 <div class="movie-btns">
+                                     <a href="#" class="imdb-rate" title="">
+     
+                                         IMDB 8/10
+     
+                                     </a>
+                                     <a href="#" class="like" title="">
+                                         <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                             preserveAspectRatio="xMidYMid meet" viewBox="0 0 36 36">
+                                             <path fill="currentColor"
+                                                 d="M33 7.64c-1.34-2.75-5.2-5-9.69-3.69A9.87 9.87 0 0 0 18 7.72a9.87 9.87 0 0 0-5.31-3.77C8.19 2.66 4.34 4.89 3 7.64c-1.88 3.85-1.1 8.18 2.32 12.87C8 24.18 11.83 27.9 17.39 32.22a1 1 0 0 0 1.23 0c5.55-4.31 9.39-8 12.07-11.71c3.41-4.69 4.19-9.02 2.31-12.87Z"
+                                                 class="clr-i-solid clr-i-solid-path-1" />
+                                             <path fill="none" d="M0 0h36v36H0z" />
+                                         </svg>
+                                     </a>
+                                     <a href="#" class="show-movie" title="">
+                                         <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                             preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256">
+                                             <path fill="currentColor"
+                                                 d="M240 128a16.1 16.1 0 0 1-7.7 13.7l-144 87.9a15.5 15.5 0 0 1-16.1.3A15.8 15.8 0 0 1 64 216V40a15.8 15.8 0 0 1 8.2-13.9a15.5 15.5 0 0 1 16.1.3l144 87.9A16.1 16.1 0 0 1 240 128Z" />
+                                         </svg>
+                                     </a>
+                                 </div>
+                             </div>
+                     </div>
+                 </div>
+                 <div class="swiper-slide">
+                     <div class="slide-con"><img
+                             src="https://m.media-amazon.com/M/MV5BMWQ3N2EzNjYtMzgwYS00YjdmLThmOTUtMzc4NDUxZjZkY2RhXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_FMjpg_UX1000_.jpg"
+                             alt="">
+                             <div class="slide-details">
+                                 <div class="movie-info">
+                                     <h2 class="movie-name" title="" style="color : red;">
+                                      SCIENCE <br>
+                                      • Data Science <br>
+                                      • IT <br>
+                                      • Marketing & Advertises  <br>
+                                      • social media <br>
+                                      • Cinematography 
+                                     </h2>
+                                     <span class="movie-full-time" title="">
+                                         2h 24m
+                                     </span>
+                                     <span class="movie-views" title="">
+                                         
+                                     </span>
+                                 </div>
+                                 <div class="movie-btns">
+                                     <a href="#" class="imdb-rate" title="">
+     
+                                         IMDB 8/10
+     
+                                     </a>
+                                     <a href="#" class="like" title="">
+                                         <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                             preserveAspectRatio="xMidYMid meet" viewBox="0 0 36 36">
+                                             <path fill="currentColor"
+                                                 d="M33 7.64c-1.34-2.75-5.2-5-9.69-3.69A9.87 9.87 0 0 0 18 7.72a9.87 9.87 0 0 0-5.31-3.77C8.19 2.66 4.34 4.89 3 7.64c-1.88 3.85-1.1 8.18 2.32 12.87C8 24.18 11.83 27.9 17.39 32.22a1 1 0 0 0 1.23 0c5.55-4.31 9.39-8 12.07-11.71c3.41-4.69 4.19-9.02 2.31-12.87Z"
+                                                 class="clr-i-solid clr-i-solid-path-1" />
+                                             <path fill="none" d="M0 0h36v36H0z" />
+                                         </svg>
+                                     </a>
+                                     <a href="#" class="show-movie" title="">
+                                         <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                             preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256">
+                                             <path fill="currentColor"
+                                                 d="M240 128a16.1 16.1 0 0 1-7.7 13.7l-144 87.9a15.5 15.5 0 0 1-16.1.3A15.8 15.8 0 0 1 64 216V40a15.8 15.8 0 0 1 8.2-13.9a15.5 15.5 0 0 1 16.1.3l144 87.9A16.1 16.1 0 0 1 240 128Z" />
+                                         </svg>
+                                     </a>
+                                 </div>
+                             </div>
+                     </div>
+                 </div>
+                 <div class="swiper-slide">
+                     <div class="slide-con">
+                         <img src="https://fr.web.img2.acsta.net/pictures/20/11/17/16/44/3495622.jpg" alt="">
+                         <div class="slide-details">
+                             <div class="movie-info">
+                                 <h2 class="movie-name" title="" style="color :red;">
+                                  TEACHING <br>
+                                  • Filmmakers <br>
+                                  • Photographers <br>
+                                  • Marketing & Advertises  <br>
+                                  • social media <br>
+                        
+                                  • Cinematography
+                                 </h2>
+                                 <span class="movie-full-time" title="">
+                                     2h 24m
+                                 </span>
+                                 <span class="movie-views" title="">
+                                     
+                                 </span>
+                             </div>
+                             <div class="movie-btns">
+                                 <a href="#" class="imdb-rate" title="">
+ 
+                                     IMDB 8/10
+ 
+                                 </a>
+                                 <a href="#" class="like" title="">
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                         preserveAspectRatio="xMidYMid meet" viewBox="0 0 36 36">
+                                         <path fill="currentColor"
+                                             d="M33 7.64c-1.34-2.75-5.2-5-9.69-3.69A9.87 9.87 0 0 0 18 7.72a9.87 9.87 0 0 0-5.31-3.77C8.19 2.66 4.34 4.89 3 7.64c-1.88 3.85-1.1 8.18 2.32 12.87C8 24.18 11.83 27.9 17.39 32.22a1 1 0 0 0 1.23 0c5.55-4.31 9.39-8 12.07-11.71c3.41-4.69 4.19-9.02 2.31-12.87Z"
+                                             class="clr-i-solid clr-i-solid-path-1" />
+                                         <path fill="none" d="M0 0h36v36H0z" />
+                                     </svg>
+                                 </a>
+                                 <a href="#" class="show-movie" title="">
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                         preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256">
+                                         <path fill="currentColor"
+                                             d="M240 128a16.1 16.1 0 0 1-7.7 13.7l-144 87.9a15.5 15.5 0 0 1-16.1.3A15.8 15.8 0 0 1 64 216V40a15.8 15.8 0 0 1 8.2-13.9a15.5 15.5 0 0 1 16.1.3l144 87.9A16.1 16.1 0 0 1 240 128Z" />
+                                     </svg>
+                                 </a>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="swiper-slide">
+                     <div class="slide-con">
+                         <img src="https://m.media-amazon.com/M/MV5BOTNjM2Y2ZjgtMDc5NS00MDQ1LTgyNGYtYzYwMTAyNWQwYTMyXkEyXkFqcGdeQXVyMjE4NzUxNDA@._V1_FMjpg_UX1000_.jpg"
+                             alt="">
+                             <div class="slide-details">
+                                 <div class="movie-info">
+                                     <h2 class="movie-name" title="" style="color : red;">
+                                      MANUFACTURING  <br>
+
+                                          • Filmmakers <br>
+                                          • Photographers <br>
+                                          • Marketing & Advertises <br> 
+                                          • social media <br>
+                                          • Cinematography
+                                     </h2>
+                                     <span class="movie-full-time" title="">
+                                         2h 24m
+                                     </span>
+                                     <span class="movie-views" title="">
+                                         
+                                     </span>
+                                 </div>
+                                 <div class="movie-btns">
+                                     <a href="#" class="imdb-rate" title="">
+     
+                                         IMDB 8/10
+     
+                                     </a>
+                                     <a href="#" class="like" title="">
+                                         <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                             preserveAspectRatio="xMidYMid meet" viewBox="0 0 36 36">
+                                             <path fill="currentColor"
+                                                 d="M33 7.64c-1.34-2.75-5.2-5-9.69-3.69A9.87 9.87 0 0 0 18 7.72a9.87 9.87 0 0 0-5.31-3.77C8.19 2.66 4.34 4.89 3 7.64c-1.88 3.85-1.1 8.18 2.32 12.87C8 24.18 11.83 27.9 17.39 32.22a1 1 0 0 0 1.23 0c5.55-4.31 9.39-8 12.07-11.71c3.41-4.69 4.19-9.02 2.31-12.87Z"
+                                                 class="clr-i-solid clr-i-solid-path-1" />
+                                             <path fill="none" d="M0 0h36v36H0z" />
+                                         </svg>
+                                     </a>
+                                     <a href="#" class="show-movie" title="">
+                                         <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                             preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256">
+                                             <path fill="currentColor"
+                                                 d="M240 128a16.1 16.1 0 0 1-7.7 13.7l-144 87.9a15.5 15.5 0 0 1-16.1.3A15.8 15.8 0 0 1 64 216V40a15.8 15.8 0 0 1 8.2-13.9a15.5 15.5 0 0 1 16.1.3l144 87.9A16.1 16.1 0 0 1 240 128Z" />
+                                         </svg>
+                                     </a>
+                                 </div>
+                             </div>
+                     </div>
+                 </div>
+                 <div class="swiper-slide">
+                  <div class="slide-con">
+                      <img src="https://fr.web.img2.acsta.net/pictures/20/11/17/16/44/3495622.jpg" alt="">
+                      <div class="slide-details">
+                          <div class="movie-info">
+                              <h2 class="movie-name" title="" style="color :red;">
+                                FINANCE <br>
+
+                                • Financial Analyst <br>
+                                • Accountant
+                              </h2>
+                              <span class="movie-full-time" title="">
+                                  2h 24m
+                              </span>
+                              <span class="movie-views" title="">
+                                  
+                              </span>
+                          </div>
+                          <div class="movie-btns">
+                              <a href="#" class="imdb-rate" title="">
+
+                                  IMDB 8/10
+
+                              </a>
+                              <a href="#" class="like" title="">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                      preserveAspectRatio="xMidYMid meet" viewBox="0 0 36 36">
+                                      <path fill="currentColor"
+                                          d="M33 7.64c-1.34-2.75-5.2-5-9.69-3.69A9.87 9.87 0 0 0 18 7.72a9.87 9.87 0 0 0-5.31-3.77C8.19 2.66 4.34 4.89 3 7.64c-1.88 3.85-1.1 8.18 2.32 12.87C8 24.18 11.83 27.9 17.39 32.22a1 1 0 0 0 1.23 0c5.55-4.31 9.39-8 12.07-11.71c3.41-4.69 4.19-9.02 2.31-12.87Z"
+                                          class="clr-i-solid clr-i-solid-path-1" />
+                                      <path fill="none" d="M0 0h36v36H0z" />
+                                  </svg>
+                              </a>
+                              <a href="#" class="show-movie" title="">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                      preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256">
+                                      <path fill="currentColor"
+                                          d="M240 128a16.1 16.1 0 0 1-7.7 13.7l-144 87.9a15.5 15.5 0 0 1-16.1.3A15.8 15.8 0 0 1 64 216V40a15.8 15.8 0 0 1 8.2-13.9a15.5 15.5 0 0 1 16.1.3l144 87.9A16.1 16.1 0 0 1 240 128Z" />
+                                  </svg>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+             </div>
+ 
+         </div>
+     </section>
+     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+         new Swiper(".swiper", {
+             loop: true,
+             effect: 'coverflow',
+             centeredSlides: true,
+             slidesPerView: 'auto',
+             speed: 500,
+             pagination: {
+                 el: '.swiper-pagination',
+                 clickable: true, 
+             
+             },
+   
+             breakpoints	: {
+             768: {
+                 centeredSlides: false,
+              coverflowEffect:{
+ 
+           depth: 0, 
+ 
+           rotate: 0, 
+ 
+           stretch : -10, 
+ 
+          
+ 
+          } 
+             }
+             },
+              autoplay: {
+               delay: 3000,
+              },
+          coverflowEffect:{
+           depth: 80, 
+           rotate: 50, 
+           stretch : 20, 
+          
+          } 
+         })
+     </script> -->
+<br>
+<br>
+ 
+  <div style="display: flex; justify-content: center;">
+       
+        <div class="scrollmenu" style="text-align: center;">
+          
+           <style>
+               button{
+                    background-color: black;
+                    color: white;
+                    padding: 10px;
+                    border-radius: 10px;
+                    position: relative;
+                    top: -25px;
+               }
+               img{
+                border-radius: 20px;
+                position: relative;
+                top: -14px;
+                
+               }
+               .btn-car{
+                position: relative;
+              top: -100px;
+                border: 1px solid black;
+                border-radius: 10px;
+                background: white;
+                padding: 1px;
+                color : white;
+             
+               }
+
+
+           </style>
+<div style="display: flex; gap: 10px;">
+<div  style="  border-radius: 20px; max-width: 170px; background-color: gray; height: 240px;"><button onclick="agentFuntion()">MEDIA</button>
+ 
+  <br>
+  <img src="WhatsApp Image 2023-03-13 at 21.34.33.jpeg" width="100%" alt="">
+ <br>
+  <a class="btn-car" >APPLY</a>
+</div>
+<div  style="  border-radius: 20px; max-width: 170px; background-color: gray; height: 240px;"><button onclick="fashionFunction()">MEDICAL</button>
+  <br>
+  <img src="women.jpg" width="100%" alt="">
+  <br>
+  <a class="btn-car" >APPLY</a>
+</div><div  style="  border-radius: 20px; max-width: 170px; background-color: gray; height: 240px;"><button onclick="enterFunction()">SCIENCE</button>
+  <br>
+  <img src="women.jpg" width="100%" alt="">
+  <br>
+  <a class="btn-car" >APPLY</a>
+</div><div  style="  border-radius: 20px; max-width: 170px; background-color: gray; height: 240px;"><button onclick="domeFuction()">TEACHING</button>
+  <br>
+  <img src="women.jpg" width="100%" alt="">
+  <br>
+  <a class="btn-car" >APPLY</a>
+</div><div  style="  border-radius: 20px; max-width: 170px; background-color: gray; height: 240px;"><button onclick="transFunction()">LEARNERSHIPS</button>
+  <br>
+  <img src="women.jpg" width="100%" alt="">
+  <br>
+  <a class="btn-car" >APPLY</a>
+</div>
+<div  style="  border-radius: 20px; max-width: 170px; background-color: gray; height: 240px;"><button onclick="schoolFunction()">MANUFACTURING</button>
+  <br>
+  <img src="women.jpg" width="100%" alt="">
+  <br>
+  <a class="btn-car" >APPLY</a>
+</div>
+<div  style="  border-radius: 20px; max-width: 170px; background-color: gray; height: 240px;"><button onclick="financeFunction()">FINANCE</button>
+  <br>
+  <img src="women.jpg" width="100%" alt="">
+  <br>
+  <a class="btn-car" >APPLY</a>
+</div>
+  
+</div>
+<!-- <a href="#mission" style="max-width: 170px; background-color: gray;"><button onclick="fashionFunction()">MEDICAL</button>
+  <br>
+  <img src="women.jpg" width="100%" alt="">
+</a>
+<a href="#value" style="max-width: 170px; background-color: gray;"><button onclick="enterFunction()">SCIENCE</button>
+  <br>
+  <img src="women.jpg" width="100%" alt="">
+</a>
+<a href="#purpose" style="max-width: 170px; background-color: gray;"><button onclick="domeFuction()">TEACHING</button>
+  <br>
+  <img src="women.jpg" width="100%" alt="">
+</a>
+<a href="#strategy" style="max-width: 170px; background-color: gray;"><button onclick="transFunction()">LEARNERSHIPS</button>
+  <br>
+  <img src="women.jpg" width="100%" alt="">
+</a>
+<a href="#strategy" style="max-width: 170px; background-color: gray;"><button onclick="schoolFunction()">MANUFACTURING</button>
+  <br>
+  <img src="women.jpg" width="100%" alt="">
+</a>
+<a href="#strategy" style="max-width: 170px; background-color: gray;"><button onclick="financeFunction()">FINANCE</button>
+  <br>
+  <img src="women.jpg" width="100%" alt=""> -->
+</a>
+       
+       
+       
+          </div>
+        </div>
+        
+      
+</div> 
+
+<p id="demo" style="text-align: center;">
+
+</p>
+<p id="demoo" style="text-align: center;">
+
+</p>
+<p id="demooo" style="text-align: center;">
+
+</p>
+<p id="demoooo" style="text-align: center;">
+
+</p>
+<p id="demooooo" style="text-align: center;">
+
+</p>
+<p id="demoooooo" style="text-align: center;">
+
+</p>
+<p id="demooooooo" style="text-align: center;">
+
+</p>
+
+<script>
+function agentFuntion() {
+
+document.getElementById("demoo").innerHTML = "";
+document.getElementById("demooo").innerHTML = "";
+document.getElementById("demoooo").innerHTML = "";
+document.getElementById("demooooo").innerHTML = "";
+document.getElementById("demooooo").innerHTML = "";
+document.getElementById("demoooooo").innerHTML = "";
+document.getElementById("demo").innerHTML =  "Filmmakers Photographers <br> Marketing & Advertises  <br> Social Media <br> Cinematography <br> Drama <br> Broadcasting <br> REQUIREMENTS: ";
+}
+     </script>
+<script>
+function fashionFunction() {
+
+   document.getElementById("demo").innerHTML = "";
+  
+document.getElementById("demooo").innerHTML = "";
+document.getElementById("demoooo").innerHTML = "";
+document.getElementById("demooooo").innerHTML = "";
+document.getElementById("demooooo").innerHTML = "";
+document.getElementById("demoooooo").innerHTML = "";
+ document.getElementById("demoo").innerHTML = "Physician/Surgeon <br> Nurse   Practitioner <br> social media <br>  Cinematography <br> REQUIREMENTS :";
+}
+ </script>
+<script>
+function enterFunction() {
+   document.getElementById("demo").innerHTML = "";
+   document.getElementById("demoo").innerHTML = "";
+
+document.getElementById("demoooo").innerHTML = "";
+document.getElementById("demooooo").innerHTML = "";
+document.getElementById("demooooo").innerHTML = "";
+document.getElementById("demoooooo").innerHTML = "";
+ 
+ document.getElementById("demooo").innerHTML = "Data Science <br> IT <br> Marketing & Advertises <br> social media <br> Cinematography <br> REQUIREMENTS:";
+ }
+</script>
+<script>
+function domeFuction() {
+ document.getElementById("demo").innerHTML = "";
+ document.getElementById("demoo").innerHTML = "";
+document.getElementById("demooo").innerHTML = "";
+
+document.getElementById("demooooo").innerHTML = "";
+document.getElementById("demooooo").innerHTML = "";
+document.getElementById("demoooooo").innerHTML = "";
+
+document.getElementById("demoooo").innerHTML = " Filmmakers <br> Photographers <br> Marketing & Advertises <br>  social media <br>   Cinematography <br> REQUIREMENTS: "; 
+}
+</script>
+<script>
+function transFunction() {
+   document.getElementById("demo").innerHTML = "";
+   document.getElementById("demoo").innerHTML = "";
+document.getElementById("demooo").innerHTML = "";
+document.getElementById("demoooo").innerHTML = "";
+
+document.getElementById("demooooo").innerHTML = "";
+document.getElementById("demoooooo").innerHTML = "";
+document.getElementById("demooooo").innerHTML = " Filmmakers <br> Photographers <br> Marketing & Advertises <br>  social media <br>   Cinematography <br> REQUIREMENTS: "; 
+}
+ </script>
+<script>
+ function schoolFunction() {
+     document.getElementById("demo").innerHTML = "";
+     document.getElementById("demoo").innerHTML = "";
+document.getElementById("demooo").innerHTML = "";
+document.getElementById("demoooo").innerHTML = "";
+document.getElementById("demooooo").innerHTML = "";
+document.getElementById("demooooo").innerHTML = "";
+
+document.getElementById("demoooooo").innerHTML = " Filmmakers <br> Photographers <br> Marketing & Advertises <br>  social media <br>   Cinematography <br> REQUIREMENTS: "; 
+}
+ </script>
+ <script>
+  function financeFunction() {
+     document.getElementById("demo").innerHTML = "";
+     document.getElementById("demoo").innerHTML = "";
+document.getElementById("demooo").innerHTML = "";
+document.getElementById("demoooo").innerHTML = "";
+document.getElementById("demooooo").innerHTML = "";
+document.getElementById("demooooo").innerHTML = "";
+
+document.getElementById("demoooooo").innerHTML = "";
+document.getElementById("demooooooo").innerHTML = "Financial Analyst <br> Accountant <br> REQUIREMENTS ";
+  }
+ </script>
+
+     <footer id="footer">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-4 col-sm-6">
+                         <div class="footer-info">
+                              <div class="section-title">
+                                   <h2>Headquarter</h2>
+                              </div>
+                              <address>
+                                   <p>Thabo Mbeki Street, Pietersburg<br> Polokwane, 0700 South Africa</p>
+                              </address>
+
+
+                              <div class="copyright-text"> 
+                                   <p>Copyright &copy; 2022 WORTH-INVADE GROUP</p>
+                                   <br><br>
+                                   <a href="#" title="Image from freepnglogos.com"><img src="https://www.freepnglogos.com/uploads/visa-card-and-mastercard-logo-png-28.png" width="200" alt="visa card and mastercard logo png" /></a>
+                                   
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <div class="footer-info">
+                              <div class="section-title">
+                                   <h2>Contact Info</h2>
+                              </div>
+                              <address>
+                                   <p>+27123456678</p>
+                                   <p><a href="mailto:youremail.co">help@worth-invade.co.za</a></p>
+                              </address>
+
+                              <div class="footer_menu">
+                                   <h2>Socials</h2>
+                                   <ul>
+                                        <ul class="social-icon">
+                                             <li><a href="twitter.com/twi_group" class="fa fa-twitter"></a></li>
+                                             <li><a href="instagram.com/twi_group_sa" class="fa fa-instagram"></a></li>
+                                             <li><a href="#" class="fa fa-facebook-square"></a></li>
+                                       
+                                   </ul>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-12">
+                         <div class="footer-info newsletter-form">
+                              <div class="section-title">
+                                   <h2>Map</h2>
+                                   <div class="mapouter"><div class="gmap_canvas"><iframe width="374" height="315" id="gmap_canvas" src="https://maps.google.com/maps?q=Thabo%20Mbeki%20Street,%20Pietersburg%20Polokwane,%200700%20South%20Africa&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies-online.net"></a><br><style>.mapouter{position:relative;text-align:right;height:315px;width:374px;}</style><a href="https://www.embedgooglemap.net">custom google maps embed</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:315px;width:374px;}</style></div></div>     
+                              </div>
+                         </div>
+                         
+                    
+                    </div>
+                    
+                    <p>.
+                         <hr style="height:2px;border-width:0;color:white;background-color:white">
+                         <p style="text-align: center;">COPYRIGHT &copy; 2022 THE WORTH-INVADE GROUP PTY LIMITED IS A REGISTERED CREDIT PROVIDER(NCRCP NO 22222)</p>
+                                   <br><br>
+                    </p>
+               </div>
+          </div>
+     </footer> 
+    
+     <!-- SCRIPTS -->
+     <script src="js/jquery.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/owl.carousel.min.js"></script>
+     <script src="js/smoothscroll.js"></script>
+     <script src="js/custom.js"></script>
+     <script>
+          /*
+     https://source.unsplash.com/2AovfzYV3rc/1600x900
+     */
+     
+     const images = [
+          "https://source.unsplash.com/2AovfzYV3rc/1600x900",
+          "https://source.unsplash.com/YApiWyp0lqo/1600x900",
+          "https://source.unsplash.com/3ZUsNJhi_Ik/1600x900",
+          "https://source.unsplash.com/yQ9mZzBdDAM/1600x900",
+          "https://source.unsplash.com/3akA0XDg1_g/1600x900",
+          "https://source.unsplash.com/aiwuLjLPFnU/1600x900",
+          "https://source.unsplash.com/h8UQV31X5AI/1600x900"
+     ];
+     
+     const left = document.getElementById("btn-left");
+     const right = document.getElementById("btn-right");
+     
+     let count = 0;
+     
+     const cuss = document.getElementById("cus");;
+     
+     left.addEventListener("click", function () {
+          console.log("Left button clicked");
+     
+          if (count !== 0) {
+               count -= 1;
+          } else {
+               count = 0;
+          }
+     
+          bgimg = `url('${images[count]}')`;
+     
+          cuss.style.background = bgimg;
+     });
+     
+     right.addEventListener("click", function () {
+     console.log("Right button clicked");
+     
+          if (count === images.length - 1) {
+               count = 0;
+          } else {
+               count += 1;
+          }
+     
+          bgimg = `url('${images[count]}'`;
+     
+          cuss.style.background = bgimg;
+     });
+     
+     </script>
+     
+
+</body>
+</html>
